@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Fundre Project</title>
+  <meta name="description" content="My first PWA" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <meta name="theme-color" content="#00897B" />
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="assets/css/w3.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/materialize.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+  <div class="w3-container">
+    <div class="heading">
+      <ul>
+        <li><img src="assets/img/user.png" alt="" width="10%"></li>
+        <li><img src="assets/img/magnifying-glass-search.png" alt="" width="10%"></li>
+        <li><img src="assets/img/user.png" alt="" width="10%"></li>
+      </ul>
+    </div>
+    <div class="w3-row">
+      <div class="fix">
+        <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><img src="assets/img/home.png" alt=""
+              class="navigasee"></div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><img src="assets/img/conversation.png"
+              alt="" class="navigasee"></div>
+        </a>
+        <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+          <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding"><img src="assets/img/list.png" alt=""
+              class="navigasee"></div>
+        </a>
+      </div>
+    </div>
+
+    <div id="London" class="w3-container city" style="display:none">
+      <b>Top Funder</b>
+      <div class="scroll-left">
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <p> Menjual Beras </p>
+            <div class="content">lorem</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <p> Menjual Beras </p>
+            <div class="content">lorem</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <p> Menjual Beras </p>
+            <div class="content">lorem</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <p> Menjual Beras </p>
+            <div class="content">lorem</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <p> Menjual Beras </p>
+            <div class="content">lorem</div>
+          </div>
+        </div>
+      </div>
+      <p>London is the capital city of England.</p>
+      <div class="scroll">
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <h4> Menjual Beras </h4>
+            <div class="content">lorem</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <h4> Menjual Beras </h4>
+            <div class="content">test</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <h4> Menjual Beras </h4>
+            <div class="content">test</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <h4> Menjual Beras </h4>
+            <div class="content">test</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <h4> Menjual Beras </h4>
+            <div class="content">test</div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/user.png" alt="">
+          <div class="isi">
+            <h4> Menjual Beras </h4>
+            <div class="content">test</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="Paris" class="w3-container city" style="display:none">
+      <h2></h2>
+      <p>
+
+      </p>
+    </div>
+
+    <div id="Tokyo" class="w3-container city" style="display:none">
+      <h2></h2>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+
+  </div>
+
+
+  <!-- Navigasi -->
+  <nav class="teal lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo" id="logo-container">My App</a>
+      <a href="#" class="sidenav-trigger" data-target="nav-mobile">?</a>
+
+      <ul class="topnav right hide-on-med-and-down"></ul>
+      <ul class="sidenav" id="nav-mobile"></ul>
+    </div>
+  </nav>
+  <!-- Akhir Navigasi -->
+  <div class="container" id="body-content"></div>
+  <script src="assets/js/materialize.min.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .then(function () {
+            console.log("Pendaftaran ServiceWorker berhasil");
+          })
+          .catch(function () {
+            console.log("Pendaftaran ServiceWorker gagal");
+          });
+      })
+    } else {
+      console.log("ServiceWorker belum didukung browser ini.")
+    }
+  </script>
+
+</body>
+
+</html>

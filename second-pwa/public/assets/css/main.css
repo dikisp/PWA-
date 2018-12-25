@@ -1,0 +1,137 @@
+body {
+  font-family: google-sans;
+}
+
+.tablink {
+  background-color: #006b82;
+  color: white;
+  float: left;
+  border-top: red 100px;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 100%;
+}
+
+.tablink:hover {
+  background-color: #006b82;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* #London {
+  background-color: red;
+}
+
+#Paris {
+  background-color: green;
+}
+
+#Tokyo {
+  background-color: blue;
+}
+
+#Oslo {
+  background-color: orange;
+} */
+
+
+/* custom */
+@media only screen and (max-width: 600px) {
+  .scroll {
+    height: 370px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
+  .card > img{
+    width : 25%;
+    height: 25%;
+  }
+  .card{
+    display: flex;
+    flex-basis: 2;
+  }
+
+  .isi > h4{
+    font-size: 17px;
+  }
+  .w3-row > .fix {
+    display: flex;
+    justify-content: space-around;  
+    position: relative;
+    top : 450px;
+  }
+  
+  .w3-container{
+    display: block;
+  }
+  .teal{
+    display: none;
+  }
+ div > .w3-row {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+
+  }
+  .heading{
+    background: #006b82;
+    height: 70px;
+    width: 100%;
+  }
+  .heading > ul> li{
+    display: inline;
+  }
+  .heading > ul >li > img{
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  div > b{
+    margin-top: 100px;
+  }
+  .fix a{
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  .navigasee{
+    display: inline;
+    padding: 2.7px 23.7px 2.7px 23.7px ;
+  }
+  .card > .isi{
+    float: right;
+  }
+  .card{
+    z-index : -1;
+  }
+  .scroll-left > .card{
+    width: 70%;
+    margin: 10px;
+    height: auto;
+  }
+  .scroll-left{
+    overflow-x: scroll;
+    display: flex;
+    height: auto;
+    flex-direction: row; 
+    align-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  
+  .w3-container{
+    display: none;
+  }
+  .w3-row > .navigasee{
+  width: 10%;
+}
+}
